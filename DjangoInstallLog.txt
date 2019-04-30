@@ -1,0 +1,41 @@
+C:\Users\Simona\djangogirls>pip3 install --user django~=2.1 whitenoise~=4.1.0
+Collecting django~=2.1
+  Downloading https://files.pythonhosted.org/packages/54/85/0bef63668fb170888c1a2970ec897d4528d6072f32dee27653381a332642/Django-2.2-py3-none-any.whl (7.4MB)
+    100% |████████████████████████████████| 7.5MB 3.3MB/s
+Collecting whitenoise~=4.1.0
+  Downloading https://files.pythonhosted.org/packages/fd/2a/b51377ab9826f0551da19951257d2434f46329cd6cfdf9592ea9ca5f6034/whitenoise-4.1.2-py2.py3-none-any.whl
+Collecting pytz (from django~=2.1)
+  Downloading https://files.pythonhosted.org/packages/3d/73/fe30c2daaaa0713420d0382b16fbb761409f532c56bdcc514bf7b6262bb6/pytz-2019.1-py2.py3-none-any.whl (510kB)
+    100% |████████████████████████████████| 512kB 6.6MB/s
+Collecting sqlparse (from django~=2.1)
+  Downloading https://files.pythonhosted.org/packages/ef/53/900f7d2a54557c6a37886585a91336520e5539e3ae2423ff1102daf4f3a7/sqlparse-0.3.0-py2.py3-none-any.whl
+Installing collected packages: pytz, sqlparse, django, whitenoise
+  The script sqlformat.exe is installed in 'C:\Users\Simona\AppData\Roaming\Python\Python37\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  The script django-admin.exe is installed in 'C:\Users\Simona\AppData\Roaming\Python\Python37\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed django-2.2 pytz-2019.1 sqlparse-0.3.0 whitenoise-4.1.2
+You are using pip version 19.0.3, however version 19.1 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+
+
+dopo fix path:
+
+Requirement already satisfied: django~=2.1 in c:\users\simona\appdata\roaming\python\python37\site-packages (2.2)
+Requirement already satisfied: whitenoise~=4.1.0 in c:\users\simona\appdata\roaming\python\python37\site-packages (4.1.2)
+Requirement already satisfied: sqlparse in c:\users\simona\appdata\roaming\python\python37\site-packages (from django~=2.1) (0.3.0)
+Requirement already satisfied: pytz in c:\users\simona\appdata\roaming\python\python37\site-packages (from django~=2.1) (2019.1)
+You are using pip version 19.0.3, however version 19.1 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+
+
+
+C:\Users\Simona>heroku login
+heroku: Press any key to open up the browser to login or q to exit:
+Error: connect ETIMEDOUT 35.173.6.94:443
+
+
+%systemroot%\system32\LogFiles\Firewall\pfirewall.log
+%systemroot%\system32\LogFiles\Firewall\pfirewall.log
