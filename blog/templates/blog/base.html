@@ -13,6 +13,9 @@
 <p id="gotoadmin"><a href="/admin"><i>Go to Admin page</i></a></p>
 
 <div class="page-header">
+    {% if user.is_authenticated %}
+        <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+    {% endif %}
     <h1><a href="/">Django Girls - Simo Blog</a></h1>
 </div>
 
