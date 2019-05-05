@@ -11,6 +11,9 @@
 <body>
 
 <p id="gotoadmin"><a href="/admin"><i>Go to Admin page</i></a></p>
+{% if not posts %}
+    <p id="gotohome"><a href="/"><i>Home</i></a></p>
+{% endif %}
 
 <div class="page-header">
     {% if user.is_authenticated %}
