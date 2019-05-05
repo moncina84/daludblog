@@ -1,0 +1,29 @@
+<html>
+{% load staticfiles %}
+<head>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap-theme.css' %}">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+
+    <title>Django girls dalublog</title>
+</head>
+
+<body>
+
+<p id="gotoadmin"><a href="/admin"><i>Go to Admin page</i></a></p>
+
+<div class="page-header">
+    <h1><a href="/">Django Girls - Simo Blog</a></h1>
+</div>
+
+<div class="content container">
+    <div class="row">
+        <div class="col-md-8">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
